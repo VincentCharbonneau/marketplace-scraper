@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Marketplace Exact Match",
+  "version": "1.0.0",
+  "description": "Filters Facebook Marketplace results down to listings whose title exactly matches your names.",
+  "permissions": ["storage"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Marketplace Exact Match" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["match.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

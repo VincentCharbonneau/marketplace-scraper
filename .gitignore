@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Packaged extension builds (zip for the Chrome Web Store, signed .crx and its private key)
+*.zip
+*.crx
+*.pem
+dist/
+
+# Node, if tooling gets added later
+node_modules/
+npm-debug.log*
+
+# Exported match lists
+*.csv
